@@ -1,0 +1,246 @@
+/* Ajustes */
+.chango-regular {
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilo de la pantalla de inicio */
+/* Primera parte */
+body {
+    background-color: black;
+    font-size: 100%;
+}
+
+/* Fondo de video */
+.inicio {
+    background-image: url(../Source/fondo22.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 100vh;
+}
+
+/* Caja del Logo */
+.box {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 700px;
+    height: auto;
+    margin: 50px 0 0;
+}
+
+.img {
+    width: 65%;
+    height: auto;
+}
+
+@media only screen and (max-width: 716px) {
+    .box {
+        width: 600px;
+
+    }
+
+    .img {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 93vw;
+
+    }
+
+    .img {
+        width: 70%;
+    }
+
+}
+
+
+/* Cuerpo */
+/* Titulo que cambia de color con distinta apariencia */
+.bordes {
+    width: 900px;
+    margin: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#miTexto {
+    /* font-size:3.5rem;
+      font-weight: bold;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 200% 200%;
+      transition: background-image 1s ease-in-out; */
+    font-size: 5em;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 8px;
+    text-align: center;
+    border-radius: 12px;
+    animation: cambioGradiente 4s infinite ease-in-out;
+    background-color: #90c67c;
+
+}
+
+@keyframes cambioGradiente {
+    0% {
+        background-color: #c5dfa0;
+    }
+
+    16% {
+        background-color: #faf7c4;
+    }
+
+    32% {
+        background-color: #fdbf62;
+    }
+
+    48% {
+        background-color: #ff8700;
+    }
+
+    64% {
+        background-color: #fc9d19;
+    }
+
+    80% {
+        background-color: #f9b232;
+    }
+
+    100% {
+        background-color: #d0f378;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .bordes {
+        width: 600px;
+    }
+
+    #miTexto {
+        font-size: 3.2em;
+    }
+}
+
+@media only screen and (max-width: 623px) {
+    .bordes {
+        width: 300px;
+    }
+
+    #miTexto {
+        font-size: 3.2em;
+    }
+}
+
+
+/* Plantilla para todas las areas*/
+/* Tamaño de las cartas */
+.size {
+    margin: 24px;
+    border: 8px solid white;
+    border-radius: 40px;
+    transition:  border 0.2s;
+    box-sizing: border-box;
+}
+
+.tituloCartas {
+    font-size: 3.5rem;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Animacion de las cartas al momento de pasar el raton */
+.size:hover {
+    margin: 24px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+
+
+/* Tamaños Responsivos */
+@media only screen and (max-width: 1898px) {
+    .tituloCartas {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .tituloCartas {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1091px) {
+    .tituloCartas {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .tituloCartas {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 746px) {
+    .tituloCartas {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .tituloCartas {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    height: auto;
+    font-weight: bolder;
+}
+
+.barrader {
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    height: 100%;
+    border-top: 5px solid black;
+}
+
+.tabla {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.brt {
+    border-top: 3px solid black;
+}
+
+.brr {
+    border-right: 3px solid black;
+}
+
+.cont {
+    font-size: 1.3em;
+}

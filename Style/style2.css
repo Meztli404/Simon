@@ -1,0 +1,88 @@
+/* Encabezado */
+
+.fam {
+    font-family: "Chango", sans-serif;
+    font-style: normal;
+}
+.bor{
+    padding: 35px 0 ;
+    border-top: 1px solid black;
+    border-bottom:1px solid black ;
+}
+
+.tituloCartas {
+    font-family: "Chango", sans-serif;
+    font-size: 2.5rem;
+}
+.img {
+    width: 30%;
+
+}
+
+@media only screen and (max-width: 716px) {
+    .box {
+        width: 600px;
+
+    }
+
+    .img {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 93vw;
+
+    }
+
+    .img {
+        width: 70%;
+    }
+
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    /* rebote */
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.tabla {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.brt {
+    border-top: 3px solid black;
+}
+
+.brr {
+    border-right: 3px solid black;
+}
+
+.cont {
+    font-size: 1.3em;
+}
